@@ -1,0 +1,29 @@
+class A
+{
+int x,y;
+static int z=3;
+}
+class B
+{
+public static void main(String args[])
+{
+int sum;
+int f=10;
+A ob1=new A();
+ob1.x=3;
+sum=ob1.x+f+A.z;
+System.out.println("sum is"+sum);
+}
+}
+public class C
+{
+public static void main(String args[])
+{
+int sub;
+int g=1;
+A ob1=new A();
+ob1.y=5;
+sub=ob1.y-g-A.z;
+System.out.println("sub is"+sub);
+}
+}
