@@ -1,0 +1,28 @@
+public class perfectnum
+{
+    public void PerfectNumber()
+    {
+    Scanner input = new Scanner (System.in);   
+        int num = 1;
+        int n;
+    System.out.println("Enter a perfect number");
+        n= input.nextInt();
+        while(num <= n)
+        {
+        int i = 1;
+        int sum = 0;
+        while(i < num)
+            {
+        if(num % i == 0)
+                {
+        sum = sum+1;
+        i = i + 1;
+                }
+                if (sum == num)
+                {
+                System.out.println("num" + num);
+                    num = num + 1;
+                }
+            }
+        }
+    }
