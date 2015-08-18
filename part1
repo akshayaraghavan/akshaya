@@ -1,0 +1,78 @@
+PART-1
+1.What is the most important feature of java? 
+       1.Platform independent-Java compiler generates an platform independent code called bytecode.it supports all the operating system
+       2.wora(write once run anywhere)- we can run the code on other system also
+       3.security-it has more security.because we are not using the pointer concpt
+       4.Multithreading-it does many task.it divides the large tasks into subtasks and do the operation
+
+2. What do you mean by platform independent? 
+•	Java compiler generates an platform independent code called bytecode.it supports all the operating system . 
+•	We can compile the java code in one platform and use the code in any other platform like solaris,linux etc.
+
+3. What is the difference between JVM,JDK and JRE?
+     1. Jvm
+      It is an abstract machine
+      It is used in runtime environment at that time java bytecode can be executed
+      It loads code,verifes code,executes code and provides runttime environment
+     2.jre
+      It is called java runtime environment
+      It is the implementation of jvm
+      It contains set of library files+other files uses java at runtime 
+     3.jdk
+      It is java development kit
+      It contains jre+developmnetal tools
+
+4. What is the concept called Pointers? And does java supports Pointer?
+     
+     1 .  It stores the address of the another variable.
+     2 .  In which references stores on address, that address is memory of the another object
+     3 .  java does not supports pointer because having pointer creates lots of bugs on code 
+
+5. What is the base class of all the classes?
+    Java.lang.object is the base class for all the classes
+    By having the Object as the super class of all Java classes, without knowing the type we can pass around objects using the Object declaration.
+
+6. What do you mean by local variables? 
+      A  variable that is declared inside the method is called local variable  
+      example:
+      void method()
+      {
+      int n=70;//local var
+       }
+7. What do you mean by class variable.
+     1.  A variable that is declared as static is called static variable. It cannot be local
+     Example: 
+      Class a
+      {
+      Int data=50;
+      Static int m=100;//static var 
+      Void method()
+      {
+      Int n=90;
+      }
+      }
+8. Can you explain: public static void main(String args[])?
+    Public: It is an Access Modifier, defines who can access this method. Public means that this method will be accessible to any class
+        Static : Keyword which identifies the class related this. It means that this class is not instance related but class related. It can be accessed without creating the instance of Class.
+        Void : Return Type, It defined what this method can return. Which is void in this case it means that this method will not return anything.
+        main: Name of the method. This method name is searched by JVM as starting point for an application.
+        String args[] :  Parameter to main method.
+
+9. Can main method to be overloaded?
+     Yes, we can overload main method in Java. But the program doesn't execute the overloaded main method when you run your program, you have to call the overloaded main method from the actual main method
+
+10.Can a Class declared as protected?
+       I know that the class cannot be accessed by using the modifier private or protected.But during the compilation time itself, i get the error message that the modifier is not allowed.
+
+11.I don’t want my class to be inherited by other classes. What should I do?
+     we cannot use mulitiple inheritance in java because it may leads to confusion from which class we want  to call.
+     
+12.What are the different types of if statements available?
+      If
+        if else
+        If else if ladder
+        Nested if
+
+
+
+
