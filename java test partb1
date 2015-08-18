@@ -1,0 +1,64 @@
+                                                      Part –b
+
+1.Getting three inputs from the user and displaying which one is greater one. 
+
+class large
+{
+     public static void main(String args[])
+   {
+      int a, b, c;
+      System.out.println("Enter three integers ");
+      Scanner in = new Scanner(System.in);
+      a = in.nextInt();
+      b = in.nextInt();
+      c= in.nextInt();
+      if (  a> b&& a > c )
+         System.out.println("First number is largest.");
+      else if ( b > a && b > c )
+         System.out.println("Second number is largest.");
+      else if ( c > a && c > b )
+         System.out.println("Third number is largest.");
+      else   
+         System.out.println("Entered numbers are not largest");
+   }
+}
+Output
+Enter three numbers 
+10 9 4
+First number is largest
+
+2.Student Marks grade system
+  
+  import java.util.Scanner;
+  class grade
+  {
+  public static void main(String[] args) {
+  int marksgot,passMark;
+  char grade;
+  passingMarks = 40;
+  Scanner input = new Scanner(System.in);
+  System.out.println("Input marks scored by you");
+  marksObtained = input.nextInt();
+  if (marksgot >= passMark) {
+  if (marksgot > 90) 
+        grade = 'A';
+        else if (marksgot > 75)
+        grade = 'B';
+        else if (marksgot> 60)
+        grade = 'C';
+        else
+        grade = 'D'; 
+        System.out.println("You passed the exam and your grade is " + grade);
+        }
+       else 
+       {
+       grade = 'F'; 
+       System.out.println("You failed and your grade is " + grade);
+       }
+     }
+
+Output:
+You passed the exam and your grade is c
+Input marks scored by you
+39
+You failed and you grade is F
